@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+		Hello, {{ user.username }}!!
+		{% for x in posts %}
+		{{ x.author }} says {{ x.comment }}
+		{% endfor %}
+{% endblock %}
